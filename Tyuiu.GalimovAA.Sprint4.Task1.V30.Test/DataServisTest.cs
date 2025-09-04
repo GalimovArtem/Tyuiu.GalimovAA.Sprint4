@@ -40,7 +40,7 @@ namespace Tyuiu.GalimovAA.Sprint4.Task1.V30.Test
             int[] array = { 6, 8, 6, 8, 6, 8, 6, 8, 6, 8, 6, 8, 6, 8, 6 }; // Все четные
 
             int result = ds.Calculate(array);
-            int wait = (6*8*6*8*6*8*6*8*6*8*6*8*6*8*6);
+            int wait = 6 * 8 * 6 * 8 * 6 * 8 * 6 * 8 * 6 * 8 * 6 * 8 * 6 * 8 * 6;
 
             Assert.AreEqual(wait, result);
         }

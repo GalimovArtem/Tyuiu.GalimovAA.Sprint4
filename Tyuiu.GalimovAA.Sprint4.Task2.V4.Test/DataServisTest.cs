@@ -1,11 +1,24 @@
-﻿namespace Tyuiu.GalimovAA.Sprint4.Task2.V4.Test
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Tyuiu.GalimovAA.Sprint4.Task2.V4.Lib;
+
+namespace Tyuiu.GalimovAA.Sprint4.Task2.V4.Test
 {
     [TestClass]
-    public sealed class DataServisTest
+    public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidCalculate()
         {
+            DataService ds = new DataService();
+
+            int[] array = { 2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5, 6 };
+            // Нечетные элементы: 3, 5, 7, 9, 3, 5
+            // Сумма: 3+5+7+9+3+5 = 32
+
+            int result = ds.Calculate(array);
+            int wait = 32;
+
+            Assert.AreEqual(wait, result);
         }
     }
 }
