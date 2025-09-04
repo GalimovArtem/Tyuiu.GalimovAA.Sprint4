@@ -12,9 +12,6 @@ namespace Tyuiu.GalimovAA.Sprint4.Task2.V4.Test
             DataService ds = new DataService();
 
             int[] array = { 2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5, 6 };
-            // Нечетные элементы: 3, 5, 7, 9, 3, 5
-            // Сумма: 3+5+7+9+3+5 = 32
-
             int result = ds.Calculate(array);
             int wait = 32;
 

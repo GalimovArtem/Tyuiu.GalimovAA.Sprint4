@@ -25,15 +25,11 @@ namespace Tyuiu.GalimovAA.Sprint4.Task2.V4
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-
-            // Создаем и заполняем массив
             int[] array = new int[13];
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = random.Next(2, 10); // от 2 до 9 включительно
+                array[i] = random.Next(2, 10); 
             }
-
-            // Выводим массив
             Console.Write("Массив: { ");
             for (int i = 0; i < array.Length; i++)
             {
@@ -42,11 +38,9 @@ namespace Tyuiu.GalimovAA.Sprint4.Task2.V4
                     Console.Write(", ");
             }
             Console.WriteLine(" }");
-
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
             int result = ds.Calculate(array);
             Console.WriteLine("Сумма нечетных элементов массива = " + result);
             Console.ReadKey();

@@ -9,7 +9,7 @@ namespace Tyuiu.GalimovAA.Sprint4.Task2.V4.Lib
             int sum = 0;
             foreach (int num in array)
             {
-                if (num % 2 != 0) // проверяем нечетность
+                if (num % 2 != 0) 
                 {
                     sum += num;
                 }
